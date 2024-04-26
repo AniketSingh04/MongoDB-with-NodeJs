@@ -4,8 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon Mongoose/index.js",
-    "dev": "nodemon Mongoose/index.js"
+    "start": "node Mongoose/index.js",
+    "dev": "nodemon Mongoose/mongoose.js"
   },
   "author": "aniket_raj_singh",
   "license": "ISC",
