@@ -1,6 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://127.0.0.1:27017/myDatabase");
+
+const app = express();
+
+mongoose.connect("mongodb+srv://Aniket:xX63xdlXWNf3acQr@cluster0.ixsayoe.mongodb.net/BoosDB");
+console.log("Databse Created");
 
 //schema
 const bookSchema = new mongoose.Schema({
@@ -10,8 +14,6 @@ const bookSchema = new mongoose.Schema({
 
 const bookModel = mongoose.model("Book", bookSchema); //model created using schema
 
-
-const app = express();
 
 //in Mongoose, operations are carried out by model unlike collections in MongoDB
 
