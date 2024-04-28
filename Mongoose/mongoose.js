@@ -4,7 +4,7 @@ require("dotenv").config();
 
 const app = express();
 
-mongoose.connect(process.env.uri);
+mongoose.connect(process.env.uri); 
 console.log("Databse Created");
 
 //schema
