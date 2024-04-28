@@ -1,9 +1,10 @@
 const express = require("express");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const app = express();
 
-mongoose.connect("mongodb+srv://Aniket:xX63xdlXWNf3acQr@cluster0.ixsayoe.mongodb.net/BoosDB");
+mongoose.connect(process.env.uri);
 console.log("Databse Created");
 
 //schema
